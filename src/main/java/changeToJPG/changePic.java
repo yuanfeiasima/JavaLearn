@@ -13,10 +13,15 @@ import java.io.OutputStream;
  * Created by wangwentao on 2017/2/27.
  */
 public class changePic {
+
+    /**
+     * windows聚焦的图片处理
+     * @param args
+     */
     public static void main(String[] args) {
         File srcDir = new File("D:/doc/pic2");
         File[] files = srcDir.listFiles(new FilenameFilter() {
-            @Override
+
             public boolean accept(File dir, String name) {
                 return !name.endsWith(".jpg");
             }
