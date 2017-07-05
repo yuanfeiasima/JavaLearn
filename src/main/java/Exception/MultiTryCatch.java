@@ -5,6 +5,11 @@ package Exception;
  */
 public class MultiTryCatch {
 
+    /*结果
+     *caught Annoyance
+     *caught sneeze
+     *Hello World
+     */
     public static void main(String[] args) throws Exception{
         try{
             try{
