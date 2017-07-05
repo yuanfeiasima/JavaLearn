@@ -1,6 +1,5 @@
 package LongSubString;
 
-import sun.org.mozilla.javascript.internal.regexp.SubString;
 
 import java.util.HashMap;
 import java.util.Map;
