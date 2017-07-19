@@ -12,6 +12,7 @@ import java.util.UUID;
  * <BR>    修改日期         修改人          修改内容
  * </PRE>
  *
+ *
  * @author wangwt
  * @version 1.0
  * @Date Created in 2017年07月04日 21:18
@@ -19,6 +20,7 @@ import java.util.UUID;
  */
 public class HashMapDeadLoop {
     public static void main(String[] args) {
+        int i = 0;
         try {
             final HashMap<String, String> map = new HashMap<>(2);
             Thread t = new Thread(new Runnable() {
