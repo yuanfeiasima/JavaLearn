@@ -12,6 +12,6 @@ public class Client {
         handler1.setNextHandler(handler2);
         handler2.setNextHandler(handler3);
 
-        Response response = handler1.handleRequest(new Request(new Level(4)));
+        Response response = handler1.handleRequest(new Request(new Level(4), "mail"));
     }
 }
