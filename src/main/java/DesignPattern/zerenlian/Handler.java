@@ -16,7 +16,11 @@ public abstract class Handler {
 //        }
 
         this.response(request);
-        this.nextHandler.handleRequest(request);
+        if (this.nextHandler != null) {
+            this.nextHandler.handleRequest(request);
+        } else {
+            System.out.println("----------handle finish----------");
+        }
 
 
         return response;

@@ -2,22 +2,22 @@ package DesignPattern.zerenlian;
 
 public class Request {
     Level level;
-    private String messageType;
+    private String[] messageTypes;
 
-    public Request(Level level, String messageType){
+    public Request(Level level, String[] messageTypes){
         this.level = level;
-        this.messageType = messageType;
+        this.messageTypes = messageTypes;
     }
 
     public Level getLevel(){
         return level;
     }
 
-    public String getMessageType() {
-        return messageType;
+    public String[] getMessageTypes() {
+        return messageTypes;
     }
 
-    public void setMessageType(String messageType) {
-        this.messageType = messageType;
+    public void setMessageType(String[] messageTypes) {
+        this.messageTypes = messageTypes;
     }
 }

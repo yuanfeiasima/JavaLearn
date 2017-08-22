@@ -7,13 +7,16 @@ public class ConcreteHandler3 extends Handler{
 
     @Override
     protected String getMessageType() {
-        return "短信";
+        return "shortMessage";
     }
 
     public Response response(Request request) {
 //        System.out.println("-----请求由处理器3进行处理-----");
-        if (this.getMessageType().equals(request.getMessageType())) {
-            System.out.println("----发短信-----");
+        String[] messages = request.getMessageTypes();
+        for (String s : messages) {
+            if (s.equals(this.getMessageType())) {
+                System.out.println("----发短信-----");
+            }
         }
         return null;
     }
