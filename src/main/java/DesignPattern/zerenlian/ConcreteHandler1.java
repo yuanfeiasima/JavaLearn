@@ -7,7 +7,7 @@ public class ConcreteHandler1 extends Handler{
     protected String getMessageType() {
         return "mail";
     }
-    public Response response(Request request) {
+    public Response response(Message request) {
         String[] messages = request.getMessageTypes();
         for (String s : messages) {
             if (s.equals(this.getMessageType())) {

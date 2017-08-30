@@ -1,10 +1,15 @@
 package DesignPattern.zerenlian;
 
-public class Request {
+public class Message {
     Level level;
     private String[] messageTypes;
+    private boolean sendMail;
+    private boolean sendShortMsg;
+    private boolean sendApp;
 
-    public Request(Level level, String[] messageTypes){
+
+
+    public Message(Level level, String[] messageTypes){
         this.level = level;
         this.messageTypes = messageTypes;
     }

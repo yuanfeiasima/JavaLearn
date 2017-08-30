@@ -10,7 +10,7 @@ public class ConcreteHandler2  extends Handler{
         return "app";
     }
 
-    public Response response(Request request) {
+    public Response response(Message request) {
 //        System.out.println("-----请求由处理器2进行处理-----");
         String[] messages = request.getMessageTypes();
         for (String s : messages) {

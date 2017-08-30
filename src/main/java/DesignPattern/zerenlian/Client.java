@@ -13,6 +13,7 @@ public class Client {
         handler2.setNextHandler(handler3);
 
         String[] messageTypes = new String[]{"mail", "app", "shortMessage"};
-        Response response = handler1.handleRequest(new Request(new Level(4), messageTypes));
+        Response response = handler1.handleRequest(new Message(new Level(4), messageTypes));
+
     }
 }

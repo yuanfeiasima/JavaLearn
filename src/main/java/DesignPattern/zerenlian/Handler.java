@@ -2,7 +2,7 @@ package DesignPattern.zerenlian;
 
 public abstract class Handler {
     private Handler nextHandler;
-    public final Response handleRequest(Request request){
+    public final Response handleRequest(Message request){
         Response response = null;
 
 //        if(this.getHandlerLevel().above(request.getLevel())){
@@ -30,5 +30,5 @@ public abstract class Handler {
     }
     protected abstract Level getHandlerLevel();
     protected abstract String getMessageType();
-    public abstract Response response(Request request);
+    public abstract Response response(Message request);
 }

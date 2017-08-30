@@ -10,7 +10,7 @@ public class ConcreteHandler3 extends Handler{
         return "shortMessage";
     }
 
-    public Response response(Request request) {
+    public Response response(Message request) {
 //        System.out.println("-----请求由处理器3进行处理-----");
         String[] messages = request.getMessageTypes();
         for (String s : messages) {
