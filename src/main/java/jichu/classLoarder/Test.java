@@ -5,6 +5,10 @@ package jichu.classLoarder;
  * @date 2018/3/2.
  */
 public class Test {
+    /**
+     * 主动引用：先初始化父类的静态代码（父类中按顺序），再初始化子类的
+     * @param args
+     */
     public static void main(String[] args) {
 
         //结果：
