@@ -8,6 +8,7 @@ import java.util.List;
  * Created by grace on 17/3/18.
  */
 public class BinarySearch {
+    //while循环实现
     public static int rank(int key, int[] a){
         int low = 0;
         int high = a.length -1;
@@ -24,6 +25,7 @@ public class BinarySearch {
         return -1;
     }
 
+    //递归实现
     public static int rank2(int key, int low, int high, int[] a){
 //        int length = a.length;
         int mid = (high - low) / 2 + low;
@@ -34,9 +36,11 @@ public class BinarySearch {
             return -1;
         }else if (key < a[mid]){
             mid = mid - 1;
+            //查左边
             return rank2(key, low, mid, a);
         }else if(key > a[mid]){
             mid = mid + 1;
+            //查右边
             return rank2(key, mid, high, a);
         }
         return -1;
