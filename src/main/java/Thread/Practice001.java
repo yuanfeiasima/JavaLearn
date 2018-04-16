@@ -2,7 +2,7 @@ package Thread;
 
 /**
  * Created by wangwentao on 2016/5/21.
- * 多线程没有使用同步，字符串一般不是10个
+ * 多线程没有使用同步，字符串一般不是 10 个
  */
 public class Practice001 {
 
