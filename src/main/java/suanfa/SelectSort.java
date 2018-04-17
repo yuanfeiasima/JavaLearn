@@ -10,6 +10,8 @@ public class SelectSort extends Example {
 
     /**
      * 不断地在剩余元素中找到最小的元素
+     * 时间复杂度 平方级别
+     * 内存复杂度 o(1)
      */
     public static void sort(Comparable[] a) {
         show(a);
