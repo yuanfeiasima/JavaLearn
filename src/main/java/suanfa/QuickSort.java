@@ -30,19 +30,23 @@ public class QuickSort extends Example{
         while (true) {
             //扫描左右，检查扫描是否结束并交换元素
             while (less(a[++i], v)) {
+                //i 左指针一直往右走，直到遇到比v大的 停下
                 if (i == hi) {
                     break;
                 }
             }
             while (less(v, a[--j])) {
+                //右指针一直往左走，直到遇到一个比v小的 停下
                 if (j == lo) {
                     break;
                 }
             }
 
+            //左右指针相遇，本次循环结束
             if (i >= j) {
                 break;
             }
+            //交换左大右小， 变成 左小 v 右大
             exch(a, i ,j);
         }
         //将v(a[lo])放到j的位置
