@@ -1,6 +1,8 @@
 package suanfa;
 
 /**
+ * 自顶向下的归并排序
+ *
  * @author wangwentao1@jd.com
  * @date 2018/4/17.
  */
@@ -14,7 +16,7 @@ public class MergeSort extends Example {
     public static void sort(Comparable[] a) {
         //一次性分配空间
         aux = new Comparable[a.length];
-        sort(a, 0, a.length-1);
+        sort(a, 0, a.length - 1);
     }
 
     public static void sort(Comparable[] a, int lo, int hi) {
