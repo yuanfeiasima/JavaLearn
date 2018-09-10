@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class LogToExcel {
     //    public static final String logFilePath = "C:\\Users\\wangwentao1\\agent.log";
-    public static final String logFilePath = "C:\\Users\\wangwentao1\\Documents\\WeChat Files\\zngycmd\\Files\\agent(3).log";
+    public static final String logFilePath = "C:\\Users\\wangwentao1\\Documents\\WeChat Files\\zngycmd\\Files\\agent(40).log";
     public static final String excelFilePath = "C:\\Users\\wangwentao1\\source3.xls";
 
     public static void main(String[] args) {
@@ -63,7 +63,8 @@ public class LogToExcel {
     }
 
     private static void modifyPostfix(List<String> list) {
-        int offset = 0;
+        int offset = 11433;
+//        int offset = 11523;
         for (int i = 0; i < list.size(); i++) {
             //每行
             String[] strings1 = list.get(i).split("\u0001");
@@ -74,7 +75,8 @@ public class LogToExcel {
             }
             String chuan1 = strings1[11].split("=")[1];
             String c1 = chuan1.subSequence(0, 11).toString();
-            c1 = c1 + numToStr(i - offset + 1);
+//            c1 = c1 + numToStr(i - offset + 1);
+            c1 = c1 + numToStr(i + offset );
             strings1[11] = strings1[11].split("=")[0] + "=" + c1;
             list.set(i, Joiner.on("\u0001").join(strings1));
         }

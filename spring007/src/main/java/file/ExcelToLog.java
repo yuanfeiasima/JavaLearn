@@ -18,9 +18,10 @@ import java.io.InputStream;
  */
 public class ExcelToLog {
 
-    public static final String logFilePath = "C:\\Users\\wangwentao1\\agent.log";
+    public static final String logFilePath = "C:\\Users\\wangwentao1\\agent4.log";
     public static void main(String[] args) throws Exception {
-        InputStream inputStream = new FileInputStream("C:\\Users\\wangwentao1\\dest.xls");
+//        InputStream inputStream = new FileInputStream("C:\\Users\\wangwentao1\\dest.xls");
+        InputStream inputStream = new FileInputStream("C:\\Users\\wangwentao1\\source3.xls");
         Workbook workbook = WorkbookFactory.create(inputStream);
         Sheet sheet = workbook.getSheetAt(0);
         StringBuilder sb = new StringBuilder();
