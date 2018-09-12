@@ -14,12 +14,12 @@ public class MessageHandlers {
         handlers.put(type, handler);
     }
 
-    public MessageHandlers defaultHandlers(IMessageHandler<MessageInput> defaultHandler) {
+    public MessageHandlers defaultHandler(IMessageHandler<MessageInput> defaultHandler) {
         this.defaultHandler = defaultHandler;
         return this;
     }
 
-    public IMessageHandler<MessageInput> getDefaultHandler() {
+    public IMessageHandler<MessageInput> defaultHandler() {
         return defaultHandler;
     }
 
