@@ -17,6 +17,7 @@ public class RedisConfig {
     public RedisConnectionFactory redisCF() {
         JedisConnectionFactory factory = new JedisConnectionFactory();
         factory.setPort(6379);
+        //https://blog.csdn.net/xinshui151/article/details/79194980  bind redis机器的ip
         factory.setHostName("192.168.116.10");
 //        factory.setPassword("hadoop");
 //        factory.setUseSsl(true);
