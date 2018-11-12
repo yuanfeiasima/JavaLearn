@@ -1,9 +1,12 @@
 package rpc.demo;
 
+import lombok.Data;
+
 /**
  * @author wangwentao1@jd.com
  * @date 2018/7/25.
  */
+@Data
 public class ExpRequest {
     private int base;
     private int exp;
