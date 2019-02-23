@@ -51,6 +51,6 @@ class ExpRequestHandler implements IMessageHandler<ExpRequest> {
 public class DemoServer {
 
     public static void main(String[] args) {
-        RPCServer
+//        RPCServer
     }
 }
